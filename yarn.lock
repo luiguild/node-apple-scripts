@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
-osa2@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/osa2/-/osa2-0.2.2.tgz#8e34d1f358f4fd0fe410ddb28cff75411c91474c"
+buffers@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/buffers/-/buffers-0.1.1.tgz#b24579c3bed4d6d396aeee6d9a8ae7f5482ab7bb"
+
+node-osascript@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-osascript/-/node-osascript-2.0.0.tgz#26e22bfd067d6e74d154570d9857efc6020080c9"
+  dependencies:
+    buffers "^0.1.1"

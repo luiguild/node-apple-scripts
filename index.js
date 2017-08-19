@@ -1,13 +1,14 @@
-var osa = require('..')
+var osascript = require('node-osascript');
 
-var getCurrentTrack = osa(() => Application('iTunes').currentTrack.name())
+let toRight = () => osascript.execute('tell application "System Events" to keystroke (ASCII character 29)', {}, function(err, result, raw){
+    if (err) return console.error(err);
+    // console.log(result, raw);
+});
 
-async function main() {
+(async function main() {
     try {
-        console.log(`Now playing ${await getCurrentTrack()}.`)
+        await toRight();
     } catch (e) {
-        console.log('No music playing.')
-    }
-}
-
-main()
+        console.log('Error');
+    };
+})();

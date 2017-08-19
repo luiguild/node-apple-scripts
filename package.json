@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "osa2": "^0.2.2"
+    "node-osascript": "^2.0.0"
   }
 }
